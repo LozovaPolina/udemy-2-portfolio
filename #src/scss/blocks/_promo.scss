@@ -47,9 +47,13 @@
     align-items: center;
     top: 37%;
     transform: translateY(-37%);
-    &__link {}
-
-    &__img {}
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
 
     &__line {
         width: 2px;

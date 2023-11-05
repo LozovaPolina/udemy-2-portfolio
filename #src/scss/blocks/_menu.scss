@@ -1,7 +1,7 @@
 .burger {
     position: fixed;
-    top: 20px;
-    right: 30px;
+    top: 1.25rem;
+    right: 1.875rem;
     height: 1.3125rem;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
         position: relative;
         height: 100vh;
         width: 19%;
-        padding: 25px 25px 50px 25px;
+        padding: 1.5625rem 1.5625rem 3.125rem 1.5625rem;
         display: flex;
         flex-direction: column;
         background: $main-color;
@@ -69,7 +69,7 @@
     &__nav {
         flex: 1 1 auto;
         align-self: start;
-        padding: 0px 10px 0px 30px;
+        padding: 0rem .625rem 0rem 1.875rem;
         
         
     }
@@ -80,23 +80,23 @@
 
     &__link {
         position: relative;
-        margin-bottom: 15px;
-        padding: 10px 0px 10px 20px;
+        margin-bottom: .9375rem;
+        padding: .625rem 0rem .625rem 1.25rem;
 
         a {
             color: #FFF;
-            font-size: 1.5rem;
+            font-size: 24px;
             font-weight: 700;
         }
         &:before {
             content: '';   
             position: absolute;
             top: 52%;
-            left: -20px;
+            left: -1.25rem;
             transform: translateY(-52%);
             width: 15px;
             height: 15px;
-            border: 1px solid #151812;
+            border: .0625rem solid #151812;
             border-radius: 50%;
             background: url();
         }
@@ -107,7 +107,7 @@
             }
         }
         &:last-child {
-            margin: 0px 0px 0px 0px;
+            margin: 0rem 0rem 0rem 0rem;
         }
     }
 
@@ -117,7 +117,7 @@
             display: inline-block;
             margin-right: 15px;
                 &:last-child {
-                    margin: 0px 0px 0px 0px;
+                    margin: 0rem 0rem 0rem 0rem;
                 }
                 svg path:hover{
                     fill: #FFF;

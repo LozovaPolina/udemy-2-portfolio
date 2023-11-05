@@ -1,0 +1,91 @@
+.about {
+    padding: 120px 0px 50px 0px;
+    
+    &__grid {
+        display: grid;
+        max-width: 65rem;
+        grid-template-rows: repeat(2, minmax(250px, 1fr)) max(100px);
+        grid-template-columns: minmax(auto, 400px) 1fr;
+        column-gap: 7%;
+        grid-template-areas: 
+        "image" "biography" 
+        "image" "skill" 
+        "image";
+        grid-auto-rows: 1fr;
+    }
+
+    &__image {
+        grid-area: image;
+        grid-column: 1/2;
+        grid-row: 1/4;
+        position: relative;
+        padding: 0px 0px 80% 0px;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+
+    &__biography {
+        grid-area: biography;
+        padding: .625rem 0px 0px 0px;
+        grid-column: 2/3;
+        grid-row: 1/2
+    }
+
+    &__skill {
+        grid-area: skill;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        row-gap: 1.25rem;
+    }
+
+}
+.biography {
+
+    &__label {
+        margin-bottom: 1.25rem;
+    }
+    &__text {
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.skill {
+    &__item-box {
+        display: flex;
+        gap: 1.25rem;
+    }
+    &__icon-wrapper {}
+
+    &__descr {
+        max-width: 12.5rem;
+        height: 100%;
+    }
+    &__subtitle {
+        margin-bottom: .375rem;
+    }
+    &__text {}
+}
+
+.icon-item {
+    position: relative;
+    &__image {
+        position: absolute;
+        top: 15%;
+        right: -5%;
+    }
+    &__circle {
+    }
+}
+
+
+

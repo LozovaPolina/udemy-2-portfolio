@@ -1,0 +1,54 @@
+.icon-item {
+
+    position: relative;
+    display: inline-block;
+
+    &__image {
+        position: absolute;
+        top: 53%;
+        right: -13%;
+    }
+
+    &__circle {}
+}
+
+
+.skills {
+
+    &__item {
+        display: grid;
+        grid-template: 36px  minmax(90px, 1fr) / 36px (minmax(auto, 200px));
+        column-gap: 15px;
+
+    }
+}
+
+.skills {
+
+    &__icon-wrapper {
+        grid-column: 1/2;
+        padding: 10px 0px 0px 0px;
+    }
+
+    &__subtitle {
+        grid-column: 2/3;
+    }
+
+    &__text {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+}
+
+.icon-item {
+
+    &__image {}
+
+    &__circle {}
+}
+
+.subtitle {
+    align-self: center;
+    &_mini {}
+}
+

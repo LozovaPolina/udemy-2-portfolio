@@ -1,4 +1,4 @@
-// .subtitle {
+
 
 
 
@@ -10,35 +10,47 @@
 
     &__subtitle {
         position: relative;
-        padding: 0px 0px 0px 10px;
         font-size: 1rem;
         font-weight: 700;
         line-height: normal;
         z-index: 2;
-        width: 18.75rem;
+        width: 300px;
+        &_centred  {
+            text-align: center;
+            margin-bottom: 6px;
+        }
     }
 
     &__circle {
         position: absolute;
         z-index: -1;
         top: 50%;
-        right: 90%;
-        transform: translateY(-50%);
-
-
+        right: 85%;
+        transform: translate(-50%, -50%);
+        &_centred {
+            top: 50%;
+            left: 50%;
+        }
     }
 
     &__title {
         font-size: 2.25rem;
         font-weight: 700;
-        line-height: 1.666;
-        padding: 0px 20px 0px 0px;
+        line-height: 166.667%;
+        &_centred {
+            margin-bottom: 15px;
+        }
     }
 
     &__line {
         border-top: 3px solid $main-color;
         width: 60px;
     }
+    &_centred {
+        margin: 0 auto;
+        align-items: center;
+    }
+
 }
 
 .subtitle {
@@ -46,8 +58,17 @@
     font-size: .875rem;
     font-weight: 700;
     line-height: normal;
-    &_mini {
+    &_small {
         font-size: .875rem;
+    }
+    &_mini{
+        font-size: .75rem;
+        font-weight: 500;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &_normal {
+        font-size: 20px;
     }
 }
 

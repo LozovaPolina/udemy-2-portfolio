@@ -1,0 +1,91 @@
+.materials {
+
+    &__label {
+        margin-bottom: 60px;
+    }
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 270px);
+        grid-gap: 13px;
+        grid-auto-rows: minmax(270px, auto);
+        justify-content: center;
+        padding: 0px 0px 120px 0px;
+    }
+
+    &__cards {
+        border: 1px solid #000;
+        padding: 25px;
+    }
+
+    &__experience {}
+}
+
+
+
+.cards-item {
+
+    &__box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__icon-box {
+        min-height: 65px;
+    }
+
+    &__icon {}
+
+    &__subtitle { 
+    }
+
+    &__text {
+    }
+}
+
+
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    column-gap: 45px;
+    grid-auto-rows: 60px;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 45px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 185px 167px;
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    &__statistics {
+        grid-column: span 2;
+        align-self: end;
+        height: 14px;
+        border-radius: 4px;
+        background: #E8E4DE;
+        span {
+            height: 100%;
+            background: $main-color;
+            border-radius: 4px;
+            display: blockgi;
+        }
+    }
+    &__pracent {
+        justify-self: end;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+
+
+
+
+
+

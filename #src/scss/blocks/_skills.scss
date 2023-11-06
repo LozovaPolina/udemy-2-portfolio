@@ -1,54 +1,44 @@
 .icon-item {
-
     position: relative;
     display: inline-block;
 
     &__image {
         position: absolute;
-        top: 53%;
-        right: -13%;
+        top: 50%;
+        right: -10%;
     }
-
-    &__circle {}
 }
 
 
 .skills {
-
+    
     &__item {
         display: grid;
-        grid-template: 36px  minmax(90px, 1fr) / 36px (minmax(auto, 200px));
+        grid-template: 36px  minmax(90px, 1fr) / 36px (minmax(auto, 375px));
         column-gap: 15px;
-
+        padding: 0px 10px 8px 0px;
     }
-}
-
-.skills {
 
     &__icon-wrapper {
         grid-column: 1/2;
-        padding: 10px 0px 0px 0px;
     }
 
     &__subtitle {
         grid-column: 2/3;
+        align-self: start;
+        padding: 5px 0px 0px 0px;
+
     }
 
     &__text {
         grid-row: 2/3;
         grid-column: 2/3;
+        &_wide {
+            grid-column: 1/3;
+            align-self: center;
+        }
     }
 }
 
-.icon-item {
 
-    &__image {}
-
-    &__circle {}
-}
-
-.subtitle {
-    align-self: center;
-    &_mini {}
-}
 

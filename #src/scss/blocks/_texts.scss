@@ -62,15 +62,6 @@
     font-size: .875rem;
     font-weight: 700;
     line-height: normal;
-    &_small {
-        font-size: .875rem;
-    }
-    &_mini{
-        font-size: .75rem;
-        font-weight: 500;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
     &_normal {
         font-size: 20px;
     }

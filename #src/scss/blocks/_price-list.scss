@@ -1,0 +1,37 @@
+.price-list {
+    padding: 0px 0px 7% 0px;
+    &__label {
+
+    }
+
+    &__content {
+        display: grid;
+        grid-column: repeat(2, 1fr);
+        justify-content: space-around;
+
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,185px);
+        grid-template-rows: 22px auto;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__price {
+        justify-self: end;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__descr {
+        grid-column: span 2;
+    }
+    &__right-side {
+        grid-column: 2/3;
+    }
+}
+
+
+

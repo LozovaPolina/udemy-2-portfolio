@@ -15,9 +15,9 @@
         line-height: normal;
         z-index: 2;
         width: 300px;
+        margin-bottom: 20px;
         &_centred  {
             text-align: center;
-            margin-bottom: 6px;
         }
     }
 
@@ -32,14 +32,17 @@
             left: 50%;
         }
     }
+    &__circle-mini {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -25px;
+    }
 
     &__title {
         font-size: 2.25rem;
         font-weight: 700;
-        line-height: 166.667%;
-        &_centred {
-            margin-bottom: 15px;
-        }
+        margin-bottom: 20px;
     }
 
     &__line {
@@ -49,6 +52,7 @@
     &_centred {
         margin: 0 auto;
         align-items: center;
+        margin-bottom: 60px;
     }
 
 }

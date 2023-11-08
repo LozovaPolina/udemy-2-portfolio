@@ -52,7 +52,7 @@
         position: relative;
         height: 100vh;
         width: 19%;
-        padding: 1.5625rem 1.5625rem 3.125rem 1.5625rem;
+        padding: 18px 25px 50px 20px;
         display: flex;
         flex-direction: column;
         background: $main-color;
@@ -68,8 +68,7 @@
     }
     &__nav {
         flex: 1 1 auto;
-        align-self: start;
-        padding: 0rem .625rem 0rem 1.875rem;
+        align-self: center;
         
         
     }

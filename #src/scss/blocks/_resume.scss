@@ -2,23 +2,21 @@
 
 .resume {
     padding: 0px 10px 7% 10px;
-    
+    &__content-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
     &__wrapper {
         display: grid;
         max-width: 990px;
         margin: 0 auto;
-        grid-template-columns: 43px minmax(auto, 375px) minmax(auto, 143px) 43px minmax(auto, 375px);
+        grid-template-columns: 43px minmax(auto, 375px);
         grid-auto-rows: 1fr;
         
     }
 
     &__column {
-        &_first{
-            grid-column: 2/3;
-        }
-        &_second {
-            grid-column: 5/6;
-        }
     }
 
     &__subtitle-column {
@@ -33,12 +31,6 @@
 
     &__line-box {
 
-        &_first {
-            grid-column: 1/2;
-        }
-        &_second {
-            grid-column: 4/5;
-        }
     }
 }
 

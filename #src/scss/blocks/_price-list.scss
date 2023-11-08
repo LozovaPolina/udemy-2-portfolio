@@ -6,16 +6,20 @@
 
     &__content {
         display: grid;
-        grid-column: repeat(2, 1fr);
-        justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        column-gap: 70px;
+        // justify-content: space-between;
 
     }
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(2,185px);
+        grid-template-columns: 15px 6fr 4fr;
+        row-gap: 8px;
         grid-template-rows: 22px auto;
         margin: 0px 0px 20px 0px;
+        max-width: 370px;
     }
 
     &__price {
@@ -24,12 +28,25 @@
         font-weight: 700;
         line-height: normal;
     }
-
+    &__circle {
+        grid-column: 1 / 2;
+        align-self: center;
+    }
+    &__label {
+        padding-left: 10px;
+        align-self: center;
+    }
     &__descr {
-        grid-column: span 2;
+        grid-column: 2 / 4;
+        padding-left: 10px;
+    }
+    &__left-side {
+        grid-column: 1/2;
+        // justify-self: start;
     }
     &__right-side {
         grid-column: 2/3;
+        justify-self: end;
     }
 }
 

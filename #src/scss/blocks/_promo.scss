@@ -1,5 +1,5 @@
 .promo {
-    background: url('../img/main_bg.jpg') center center / cover no-repeat;
+    background: url('../img/main_bg.jpg') no-repeat ( 50% / cover) ;
     min-height: 100vh;
     padding: 205px 3.125rem 0rem 3.125rem;
     position: relative;
@@ -34,9 +34,6 @@
 
     }
 
-    &__sidebar {}
-
-    &__burger {}
 }
 
 
@@ -46,8 +43,9 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    top: 37%;
-    transform: translateY(-37%);
+    top: 40%;
+    
+
     &__link {
         &:hover {
             svg path {
@@ -60,7 +58,6 @@
         width: 2px;
         height: 70px;
         background: #000;
- 
     }
 
     &__text {
@@ -71,10 +68,12 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+
         span {
             display: block;
-            transform: rotate(-90deg) translate(-30%, -370%);
-            width: 170px; 
+            transform: rotate(-90deg) translate(-30%, -400%);
+            width: 170px;
         }
     }
 }
+

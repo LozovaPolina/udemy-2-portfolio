@@ -2,4 +2,9 @@
 gulpfile.js
 package-lock.json
 package.json
+<<<<<<< HEAD
 policy.html
+projects
+=======
+policy.html
+>>>>>>> master

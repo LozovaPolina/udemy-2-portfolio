@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <aside class="promo__sidebar sidebar">
+        <aside class=" sidebar">
             <a href="#" class="sidebar__link">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -151,11 +151,19 @@
             <div class="sidebar__text"><span>Социальные сети</span></div>
         </aside>
     </section>
+
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__image__box">
-                    <img src="img/main_photo.jpg" alt="photo" class="about__image">
+                <div class="about__image-box">
+                    <!-- <img srcset="img/main_photo_mini.jpg 300w, img/main_photo.jpg 400w" sizes="(max-width: 576px) 280px, (min-width: 577px) 400px" src="img/main_photo.jpg" alt="photo"> -->
+                    <picture>
+                        
+                        <source type="image/webp" media="(max-width: 576px)" srcset="img/main_photo_mini.webp">
+                        <source type="image/webp" media="(min-width: 577px)" srcset="img/main_photo.webp">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
+
                 </div>
                 <div class="about__grid-box">
                     <div class="about__descr">
@@ -234,36 +242,42 @@
                 <div class="label__title">Чем я буду полезна</div>
                 <div class="label__line "></div>
             </div>
-            <div class="resume__wrapper">
-                <div class="resume__line-box_first line">
-                    <div class="line__vertical"></div>
-                    <div class="line__horizontal-first">
-                        <div class="line__icon-wrapper icon-item">
-                            <img src="img/icons/experience/university.svg" alt="university" class="icon-item__image">
-                            <div class="icon-item__circle circle"></div>
+            <div class="resume__content-box">
+                <div class="resume__wrapper">
+                    <div class="resume__line-box_first line">
+                        <div class="line__vertical"></div>
+                        <div class="line__horizontal-first">
+                            <div class="line__icon-wrapper icon-item">
+                                <img src="img/icons/experience/university.svg" alt="university" class="icon-item__image">
+                                <div class="icon-item__circle circle"></div>
+                            </div>
+                        </div>
+                        <div class="line__horizontal-second">
+                            <div class="line__icon-wrapper icon-item">
+                                <img src="img/icons/experience/courses.svg" alt="courses" class="icon-item__image">
+                                <div class="icon-item__circle circle"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="line__horizontal-second">
-                        <div class="line__icon-wrapper icon-item">
-                            <img src="img/icons/experience/courses.svg" alt="courses" class="icon-item__image">
-                            <div class="icon-item__circle circle"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="resume__column resume__column_first">
-                    <h3 class="resume__subtitle-column subtitle subtitle_normal">Образование</h3>
+                
+                    <div class="resume__column">
+                        <h3 class="resume__subtitle-column subtitle subtitle_normal">Образование</h3>
                         <div class="skills resume__skills">
                             <div class="skills__item">
+<<<<<<< HEAD
+                
+=======
                                 <!-- <div class="skills__icon-wrapper icon-item">
                                     <img src="../img/icons/experience/university.svg" alt="university" class="icon-item__image">
                                     <div class="icon-item__circle circle"></div>
                                 </div> -->
+>>>>>>> master
                                 <div class="skills__subtitle subtitle">МГТУ им. Н. Э. Баумана
                                     <div class=" skills__subtitle_mini text-little">Диплом магистра | Москва (2014-2020)</div>
                                 </div>
                                 <p class="resume__skill-text skills__text skills__text_wide text-little">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et
                                     dolore magna
                                     aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
                                 </p>
@@ -271,44 +285,55 @@
                         </div>
                         <div class="skills resume__skills">
                             <div class="skills__item">
+<<<<<<< HEAD
+                
+=======
                                 <!-- <div class="skills__icon-wrapper icon-item">
                                     <img src="../img/icons/experience/courses.svg" alt="courses" class="icon-item__image">
                                     <div class="icon-item__circle circle"></div>
                                 </div> -->
+>>>>>>> master
                                 <div class="skills__subtitle subtitle">МГТУ им. Н. Э. Баумана
                                     <div class="skills__subtitle_mini text-little">Курсы по Web-разработке</div>
                                 </div>
                                 <p class="resume__skill-text skills__text skills__text_wide text-little">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et
                                     dolore magna
                                     aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
                                 </p>
                             </div>
                         </div>
-                </div>
-                <div class="resume__line-box_second line">
-                    <div class="line__vertical"></div>
-                    <div class="line__horizontal-first">
-                        <div class="line__icon-wrapper icon-item">
-                            <img src="img/icons/experience/designer.svg" alt="designer" class="icon-item__image">
-                            <div class="icon-item__circle circle"></div>
-                        </div>
-                    </div>
-                    <div class="line__horizontal-second">
-                        <div class="line__icon-wrapper icon-item">
-                            <img src="img/icons/experience/developer.svg" alt="developer" class="icon-item__image">
-                            <div class="icon-item__circle circle"></div>
-                        </div>
                     </div>
                 </div>
-                <div class="resume__column resume__column_second ">
-                    <h3 class="resume__subtitle-column subtitle subtitle_normal">Опыт работы</h3>
+                <div class="resume__wrapper">
+                    <div class="resume__line-box line">
+                        <div class="line__vertical"></div>
+                        <div class="line__horizontal-first">
+                            <div class="line__icon-wrapper icon-item">
+                                <img src="img/icons/experience/designer.svg" alt="designer" class="icon-item__image">
+                                <div class="icon-item__circle circle"></div>
+                            </div>
+                        </div>
+                        <div class="line__horizontal-second">
+                            <div class="line__icon-wrapper icon-item">
+                                <img src="img/icons/experience/developer.svg" alt="developer" class="icon-item__image">
+                                <div class="icon-item__circle circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume__column">
+                        <h3 class="resume__subtitle-column subtitle subtitle_normal">Опыт работы</h3>
                         <div class="skills resume__skills">
                             <div class="skills__item">
+<<<<<<< HEAD
+                
+=======
                                 <!-- <div class="skills__icon-wrapper icon-item">
                                     <img src="../img/icons/experience/designer.svg" alt="designer" class="icon-item__image">
                                     <div class="icon-item__circle circle"></div>
                                 </div> -->
+>>>>>>> master
                                 <div class="skills__subtitle subtitle">МГТУ им. Н. Э. Баумана
                                     <div class="skills__subtitle_mini text-little">EPAM | Москва (2018-2019)</div>
                                 </div>
@@ -319,6 +344,21 @@
                                     aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
                                 </p>
                             </div>
+<<<<<<< HEAD
+                        </div>
+                        <div class="skills resume__skills">
+                            <div class="skills__item">
+                
+                                <div class="skills__subtitle subtitle">МГТУ им. Н. Э. Баумана
+                                    <div class="skills__subtitle_mini text-little">Squad Team | Москва (2018)</div>
+                                </div>
+                                <p class="resume__skill-text skills__text skills__text_wide text-little">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et
+                                    dolore magna
+                                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
+                                </p>
+=======
                         </div> 
                     <div class="skills resume__skills">
                         <div class="skills__item">
@@ -328,16 +368,13 @@
                             </div> -->
                             <div class="skills__subtitle subtitle">МГТУ им. Н. Э. Баумана
                                 <div class="skills__subtitle_mini text-little">Squad Team | Москва (2018)</div>
+>>>>>>> master
                             </div>
-                            <p class="resume__skill-text skills__text skills__text_wide text-little">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna
-                                aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -348,7 +385,7 @@
                     Навыки
                     <div class="label__circle label__circle_centred circle"></div>
                 </h2>
-                <div class="label__title">Что я использую в работе</div>
+                <div class="materials__title label__title">Что я использую в работе</div>
                 <div class="label__line "></div>
             </div>
 
@@ -511,10 +548,10 @@
                 <div class="label__line "></div>
             </div>
             <div class="works__items">
-                <a href="#" class="works__item">
+                <a href="/projects/uber" class="works__item">
                     <img src="img/works/uber.jpg" alt="uber">
                 </a>
-                <a href="#" class="works__item">
+                <a href="projects/pulse" class="works__item">
                     <img src="img/works/pulse.jpg" alt="pulse">
                 </a>
                 <a href="#" class="works__item">
@@ -545,36 +582,30 @@
             <div class="price-list__content">
                 <div class="price-list__left-side">
                     <div class="price-list__wrapper">
-                        <div class="price-list__label label">
-                            <h3 class="label__subtitle">
-                                Landing-page
-                                <span class="label__circle-mini circle circle_small"></span>
-                            </h3>
-                        </div>
+                        <div class="price-list__circle circle circle_small"></div>
+                        <h3 class="price-list__label subtitle ">
+                            Landing-page
+                        </h3>
                         <div class="price-list__price ">от 8000 грн.</div>
                         <div class="price-list__descr text-little">
                             Одностраничный сайт для презентации услуг/товаров/...
                         </div>
                     </div>
                     <div class="price-list__wrapper">
-                        <div class="price-list__label label">
-                            <h3 class="label__subtitle ">
-                                Корпоративный сайт
-                                <span class="label__circle-mini circle circle_small"></span>
-                            </h3>
-                        </div>
+                        <div class="price-list__circle circle circle_small"></div>
+                        <h3 class="price-list__label subtitle ">
+                            Корпоративный сайт
+                        </h3>
                         <div class="price-list__price ">от 20000 грн.</div>
                         <div class="price-list__descr text-little">
                             Сайт для вашего бизнеса или компании
                         </div>
                     </div>
                     <div class="price-list__wrapper">
-                        <div class="price-list__label label">
-                            <h3 class="label__subtitle">
-                                Интернет-магазин
-                                <span class="label__circle-mini circle circle_small"></span>
-                            </h3>
-                        </div>
+                        <div class="price-list__circle circle circle_small"></div>
+                        <h3 class="price-list__label subtitle ">
+                            Интернет-магазин
+                        </h3>
                         <div class="price-list__price ">от 30000 грн.</div>
                         <div class="price-list__descr text-little">
                             Инструмент для ваших продаж в сети
@@ -583,36 +614,30 @@
                 </div>
                 <div class="price-list__right-side">
                     <div class="price-list__wrapper">
-                        <div class="price-list__label label">
-                            <h3 class="label__subtitle">
-                                Web-приложение
-                                <span class="label__circle-mini circle circle_small"></span>
-                            </h3>
-                        </div>
+                        <div class="price-list__circle circle circle_small"></div>
+                        <h3 class="price-list__label subtitle ">
+                            Web-приложение
+                        </h3>
                         <div class="price-list__price ">от 28000 грн.</div>
                         <div class="price-list__descr text-little">
                             Приложение внутри браузера для лучшего комфорта
                         </div>
                     </div>
                     <div class="price-list__wrapper">
-                        <div class="price-list__label label">
-                            <h3 class="label__subtitle">
-                                Android/IOS Приложение
-                                <span class="label__circle-mini circle circle_small"></span>
-                            </h3>
-                        </div>
+                        <div class="price-list__circle circle circle_small"></div>
+                        <h3 class="price-list__label subtitle ">
+                            Android/IOS Приложение
+                        </h3>
                         <div class="price-list__price ">от 25000 грн.</div>
                         <div class="price-list__descr text-little">
                             Приложение для смартфона любой ОС
                         </div>
                     </div>
                     <div class="price-list__wrapper">
-                        <div class="price-list__label label">
-                            <h3 class="label__subtitle">
-                                Дизайн
-                                <span class="label__circle-mini circle circle_small"></span>
-                            </h3>
-                        </div>
+                        <div class="price-list__circle circle circle_small"></div>
+                        <h3 class="price-list__label subtitle ">
+                            Дизайн
+                        </h3>
                         <div class="price-list__price ">Индивидуально</div>
                         <div class="price-list__descr text-little">
                             Создам дизайн для вашего сайта/приложения...
@@ -622,6 +647,9 @@
             </div>
         </div>
     </section>
+<<<<<<< HEAD
+
+=======
     <!-- <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
@@ -654,6 +682,7 @@
             </div>
         </div>
     </section> -->
+>>>>>>> master
     <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
@@ -696,7 +725,15 @@
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">
+<<<<<<< HEAD
+
+                            <div class="contacts__btn">
+                                <button class="btn  ">Отправить сообщение</button>
+                            </div>
+                           
+=======
                             <button class="btn contacts__btn ">Отправить сообщение</button>
+>>>>>>> master
                             <div class="contacts__policy">
                                 <input required type="checkbox">
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a> </span>
